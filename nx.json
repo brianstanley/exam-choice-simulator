@@ -39,6 +39,15 @@
     "choice-e2e": {
       "tags": [],
       "implicitDependencies": ["choice"]
+    },
+    "core-data": {
+      "tags": []
+    },
+    "core-state": {
+      "tags": []
+    },
+    "material": {
+      "tags": []
     }
   }
 }

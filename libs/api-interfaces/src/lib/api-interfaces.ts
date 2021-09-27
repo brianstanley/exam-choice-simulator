@@ -1,3 +1,36 @@
 export interface Message {
   message: string;
 }
+
+
+// Aca comprto los data models entre frontend y backend
+
+export interface BaseEntity {
+  id: string | null;
+}
+
+export interface Subjects extends BaseEntity {
+  name: string;
+}
+
+export interface ExamConfig extends BaseEntity {
+  time: number;
+  examTypeId: number;
+  subjectId: number;
+}
+
+export interface ExamType extends BaseEntity {
+  name: string;
+}
+
+export interface Answers extends BaseEntity {
+  text: string;
+}
+
+export interface Questions extends BaseEntity {
+  text: string;
+  answersIds: [];
+  examTypesId: [];
+  correctOptionId: number;
+  subjectId: number;
+}

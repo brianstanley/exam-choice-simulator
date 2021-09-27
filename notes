@@ -1,0 +1,9 @@
+//modules
+
+nx g lib core-data --parent-module=apps/choice/src/app/app.module.ts --routing --style=scss and
+nx g lib core-state --parent-module=apps/choice/src/app/app.module.ts --routing --style=scss and
+nx g lib material --parent-module=apps/choice/src/app/app.module.ts --routing --style=scss
+
+api-interfaces share data models between the frontend backend.
+core-data responsible communicate with the server (services)
+core-state manage state of the app
