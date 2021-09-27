@@ -12,9 +12,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { QuestionsComponent } from './questions/questions.component';
+import { QuestionComponent } from './question/question.component';
+import { ExamComponent } from './exam/exam.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SubjectsComponent, SidebarComponent],
+  declarations: [AppComponent, HomeComponent, SubjectsComponent, SidebarComponent, QuestionsComponent, QuestionComponent, ExamComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

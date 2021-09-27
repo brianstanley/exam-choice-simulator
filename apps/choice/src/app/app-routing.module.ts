@@ -5,7 +5,8 @@ import {SubjectsComponent} from "./subjects/subjects.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'subjects', component: SubjectsComponent }
+  { path: 'subjects', component: SubjectsComponent },
+  { path: 'test', component: SubjectsComponent }
 ];
 
 
