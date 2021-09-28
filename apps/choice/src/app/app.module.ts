@@ -13,11 +13,11 @@ import { HomeComponent } from './home/home.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { QuestionsComponent } from './questions/questions.component';
-import { QuestionComponent } from './question/question.component';
-import { ExamComponent } from './exam/exam.component';
+import { SubjectDetailComponent } from './subjects/subject-detail/subject-detail.component';
+import { SubjectListComponent } from './subjects/subject-list/subject-list.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SubjectsComponent, SidebarComponent, QuestionsComponent, QuestionComponent, ExamComponent],
+  declarations: [AppComponent, HomeComponent, SubjectsComponent, SidebarComponent, QuestionsComponent, SubjectDetailComponent, SubjectListComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
