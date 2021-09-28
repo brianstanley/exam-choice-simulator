@@ -7,13 +7,16 @@ import { ExamListComponent } from './exam-list/exam-list.component';
 
 
 @NgModule({
-  declarations: [
-    ExamsComponent,
-    ExamComponent,
-    ExamListComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [
+        ExamsComponent,
+        ExamComponent,
+        ExamListComponent
+    ],
+    exports: [
+        ExamListComponent
+    ],
+    imports: [
+        CommonModule
+    ]
 })
 export class ExamsModule { }
