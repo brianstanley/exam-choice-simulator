@@ -4,6 +4,7 @@ import { ExamsComponent } from './exams.component';
 import { ExamComponent } from './exam/exam.component';
 import { ExamListComponent } from './exam-list/exam-list.component';
 import {RouterModule} from "@angular/router";
+import { KatexModule } from 'ng-katex';
 
 
 
@@ -18,7 +19,8 @@ import {RouterModule} from "@angular/router";
     ],
     imports: [
         CommonModule,
-        RouterModule
+        RouterModule,
+        KatexModule,
     ]
 })
 export class ExamsModule { }
