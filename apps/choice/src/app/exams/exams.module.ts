@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ExamsComponent } from './exams.component';
 import { ExamComponent } from './exam/exam.component';
 import { ExamListComponent } from './exam-list/exam-list.component';
+import {RouterModule} from "@angular/router";
 
 
 
@@ -16,7 +17,8 @@ import { ExamListComponent } from './exam-list/exam-list.component';
         ExamListComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule
     ]
 })
 export class ExamsModule { }
