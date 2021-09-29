@@ -2,7 +2,7 @@
   <div class="overflow-hidden shadow-md">
     <!-- card header -->
     <div class="px-6 py-4 bg-white border-b border-gray-200">
-      Texto de latex
+      <ng-katex [equation]="equation"></ng-katex>
     </div>
 
     <!-- card body -->
@@ -11,17 +11,20 @@
         <div class="flex flex-col items-center justify-center">
           <div class="flex flex-col">
             <label class="inline-flex items-center mt-3">
-              <input type="radio" class="form-radio h-5 w-5 text-gray-600" checked><span class="ml-2 text-gray-700">Texto en latex 1</span>
+              <input type="radio" class="form-radio h-5 w-5 text-gray-600" checked>
+              <span class="ml-2 text-gray-700"><ng-katex-paragraph [paragraph]="paragraph"></ng-katex-paragraph></span>
             </label>
 
             <label class="inline-flex items-center mt-3">
-              <input type="radio" class="form-radio h-5 w-5 text-red-600" checked><span class="ml-2 text-gray-700">Texto en latex 2</span>
+              <input type="radio" class="form-radio h-5 w-5 text-red-600" checked>
+              <span class="ml-2 text-gray-700"><ng-katex-paragraph [paragraph]="paragraph2"></ng-katex-paragraph></span>
             </label>
 
             <label class="inline-flex items-center mt-3">
               <input type="radio" class="form-radio h-5 w-5 text-orange-600" checked><span class="ml-2 text-gray-700">Bla bla</span>
             </label>
           </div>
+        </div>
     </div>
 
     <!-- card footer -->

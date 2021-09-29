@@ -28,6 +28,7 @@
     "@ngrx/store": "^12.4.0",
     "@nrwl/angular": "12.9.0",
     "autoprefixer": "^10.3.5",
+    "ng-katex": "^2.0.3",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.1.1",
     "postcss-scss": "^4.0.0",
