@@ -18,8 +18,3 @@ export class ExamComponent implements OnInit {
   }
 
 }
-
-export interface Answer {
-  id: number,
-  value: string
-}

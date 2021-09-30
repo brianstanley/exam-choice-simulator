@@ -6,7 +6,7 @@ export interface Message {
 // Aca comprto los data models entre frontend y backend
 
 export interface BaseEntity {
-  id: string | null;
+  id: number | string | null;
 }
 
 export interface Subjects extends BaseEntity {
@@ -33,4 +33,8 @@ export interface Questions extends BaseEntity {
   examTypesId: [];
   correctOptionId: number;
   subjectId: number;
+}
+
+export interface Answer extends BaseEntity {
+  value: string
 }

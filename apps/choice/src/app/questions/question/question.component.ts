@@ -1,4 +1,4 @@
-import { Answer } from './../../exams/exam/exam.component';
+import { Answer } from './../../../../../../libs/api-interfaces/src/lib/api-interfaces';
 import { Component, OnInit, Input } from '@angular/core';
 
 
