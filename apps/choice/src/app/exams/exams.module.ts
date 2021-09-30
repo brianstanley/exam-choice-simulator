@@ -1,24 +1,27 @@
+import { QuestionComponent } from './../questions/question/question.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExamsComponent } from './exams.component';
 import { ExamComponent } from './exam/exam.component';
 import { ExamListComponent } from './exam-list/exam-list.component';
 import {RouterModule} from "@angular/router";
-
-
+import { KatexModule } from 'ng-katex';
 
 @NgModule({
     declarations: [
         ExamsComponent,
         ExamComponent,
-        ExamListComponent
+        ExamListComponent,
+        QuestionComponent,
     ],
     exports: [
-        ExamListComponent
+        ExamListComponent,
     ],
     imports: [
         CommonModule,
-        RouterModule
+        RouterModule,
+        KatexModule,
     ]
 })
-export class ExamsModule { }
+export class ExamsModule {
+}

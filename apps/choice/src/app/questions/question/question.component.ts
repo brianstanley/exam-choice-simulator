@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {Answer} from "@choice/api-interfaces";
+
 
 @Component({
   selector: 'choice-question',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./question.component.scss']
 })
 export class QuestionComponent implements OnInit {
+  @Input() title = '';
+  @Input() answers: Answer[] = [];
 
   constructor() { }
 
