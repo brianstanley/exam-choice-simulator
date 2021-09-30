@@ -1,4 +1,4 @@
-import { Question } from './../../exams/exam/exam.component';
+import { Answer } from './../../exams/exam/exam.component';
 import { Component, OnInit, Input } from '@angular/core';
 
 
@@ -9,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class QuestionComponent implements OnInit {
   @Input() title = '';
-  @Input() questions: Question[] = [];
+  @Input() answers: Answer[] = [];
 
   constructor() { }
 
