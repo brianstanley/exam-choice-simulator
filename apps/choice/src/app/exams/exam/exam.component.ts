@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exam.component.scss'],
 })
 export class ExamComponent implements OnInit {
-
   equation: string = 'Si $\\sum_{i=1}^nx_i$ entonces';
-  paragraph: string = ` $x ^ 2 + 5=7$ .`;
-  paragraph2: string = '$$\\sum_{i=1}^n(x_i^2 - \\overline{x}^2)$$';
+  paragraph: string = `$\\sum_{i=2}^nx_i$`;
+  paragraph2: string = '$\\sum_{i=3}^nx_i$';
+  paragraphs = [{id: 0, value: this.paragraph},
+                {id: 1, value: this.paragraph2}];
 
   constructor() { }
 
