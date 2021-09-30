@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Question } from './../../exams/exam/exam.component';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -7,10 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./question.component.scss']
 })
 export class QuestionComponent implements OnInit {
-
-  equation: string = 'Si $\\sum_{i=1}^nx_i$ entonces';
-  paragraph: string = ` $x ^ 2 + 5=7$ .`;
-  paragraph2: string = '$$\\sum_{i=1}^n(x_i^2 - \\overline{x}^2)$$';
+  @Input() title = '';
+  @Input() questions: Question[] = [];
 
   constructor() { }
 

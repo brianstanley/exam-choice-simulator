@@ -16,7 +16,6 @@ import { QuestionsComponent } from './questions/questions.component';
 import { SubjectDetailComponent } from './subjects/subject-detail/subject-detail.component';
 import { SubjectListComponent } from './subjects/subject-list/subject-list.component';
 import {ExamsModule} from "./exams/exams.module";
-import { KatexModule } from 'ng-katex';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, SubjectsComponent, SidebarComponent, QuestionsComponent, SubjectDetailComponent, SubjectListComponent],
@@ -30,7 +29,6 @@ import { KatexModule } from 'ng-katex';
     MaterialModule,
     AppRoutingModule,
     ExamsModule,
-    KatexModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
