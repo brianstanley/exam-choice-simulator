@@ -1,5 +1,5 @@
-import { Answer } from './../../../../../../libs/api-interfaces/src/lib/api-interfaces';
 import { Component, OnInit, Input } from '@angular/core';
+import {Answer} from "@choice/api-interfaces";
 
 
 @Component({
