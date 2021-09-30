@@ -1,0 +1,30 @@
+{
+  "examConfigs": [
+    {
+      "time": 120,
+      "examTypeId": 1,
+      "subjectId": 1
+    },
+    {
+      "time": 120,
+      "examTypeId": 2,
+      "subjectId": 1
+    }
+  ],
+  "examTypes": [
+    {
+      "id": 1,
+      "name": "Parcial"
+    },
+    {
+      "id": 2,
+      "name": "Integrador"
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Algebra"
+    }
+  ]
+}
