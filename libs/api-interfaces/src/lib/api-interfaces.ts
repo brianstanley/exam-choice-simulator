@@ -9,7 +9,7 @@ export interface BaseEntity {
   id: number | string | null;
 }
 
-export interface Subjects extends BaseEntity {
+export interface Subject extends BaseEntity {
   name: string;
 }
 
