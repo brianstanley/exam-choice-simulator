@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {SubjectsService} from "../../../../../../libs/core-data/subjects.service";
+import {Subject} from "@choice/api-interfaces";
 
 @Component({
   selector: 'choice-subject-list',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubjectListComponent implements OnInit {
 
-  constructor() { }
+  subjects: Subject[] | undefined;
 
-  ngOnInit(): void {
+  constructor(private subjectsService: SubjectsService) {
   }
 
+  ngOnInit(): void {
+    this.loadSubjects();
+  }
+
+  loadSubjects() {
+    this.subjectsService.all()
+      .subscribe(subjects => this.subjects = subjects);
+  }
 }

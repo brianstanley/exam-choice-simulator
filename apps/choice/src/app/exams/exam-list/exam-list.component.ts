@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ExamTypesService} from "../../../../../../libs/core-data/exam-types.service";
+import {ExamType} from "@choice/api-interfaces";
 
 @Component({
   selector: 'choice-exam-list',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExamListComponent implements OnInit {
 
-  constructor() { }
+  examTypes: ExamType[] | undefined;
 
-  ngOnInit(): void {
+  constructor(private examTypesService: ExamTypesService) {
   }
 
+  ngOnInit(): void {
+    this.loadExamTypes();
+  }
+
+  loadExamTypes() {
+    this.examTypesService.all()
+      .subscribe(examTypes => this.examTypes = examTypes);
+  }
 }
