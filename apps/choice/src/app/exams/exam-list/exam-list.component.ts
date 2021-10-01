@@ -9,10 +9,10 @@ import {ExamType} from "@choice/api-interfaces";
 })
 export class ExamListComponent implements OnInit {
 
+  examTypes: ExamType[] | undefined;
+
   constructor(private examTypesService: ExamTypesService) {
   }
-
-  examTypes: ExamType[] | undefined;
 
   ngOnInit(): void {
     this.loadExamTypes();

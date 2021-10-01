@@ -9,10 +9,10 @@ import {Subject} from "@choice/api-interfaces";
 })
 export class SubjectListComponent implements OnInit {
 
+  subjects: Subject[] | undefined;
+
   constructor(private subjectsService: SubjectsService) {
   }
-
-  subjects: Subject[] | undefined;
 
   ngOnInit(): void {
     this.loadSubjects();
