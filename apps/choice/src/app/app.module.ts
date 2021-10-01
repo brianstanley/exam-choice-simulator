@@ -15,7 +15,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { SubjectDetailComponent } from './subjects/subject-detail/subject-detail.component';
 import { SubjectListComponent } from './subjects/subject-list/subject-list.component';
-import {ExamsModule} from "./exams/exams.module";
+import { ExamsModule } from "./exams/exams.module";
+import { SubjectsService } from "../../../../libs/core-data/subjects.service";
+import { ExamTypesService } from "../../../../libs/core-data/exam-types.service";
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, SubjectsComponent, SidebarComponent, QuestionsComponent, SubjectDetailComponent, SubjectListComponent],
@@ -30,7 +32,10 @@ import {ExamsModule} from "./exams/exams.module";
     AppRoutingModule,
     ExamsModule,
   ],
-  providers: [],
+  providers: [
+    SubjectsService,
+    ExamTypesService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -17,14 +17,14 @@
     <div class="cursor-pointer w-full border-gray-100 rounded-t border-b hover:bg-blue-100">
       <div class="flex w-full items-center p-2 pl-2 border-transparent border-l-2 relative hover:border-teal-100">
         <div class="w-6 flex flex-col items-center">
-        </div>
-        <div class="w-full items-center flex">
-          <a routerLink="/subjects/1">
-            <div class="mx-2 -mt-1  ">
-              Algebra
-              <div class="text-xs truncate w-full normal-case font-normal -mt-1 text-gray-500">Parcial y final disponible.</div>
-            </div>
-          </a>
+          <div *ngFor="let subject of subjects" class="w-full items-center flex">
+            <a routerLink="/subjects/{{subject.id}}">
+              <div  class="mx-2 -mt-1 mb-3">
+                {{subject.name}}
+                <div class="text-xs truncate w-full normal-case font-normal -mt-1 text-gray-500">Parcial y final disponible.</div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
