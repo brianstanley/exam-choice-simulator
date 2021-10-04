@@ -16,8 +16,8 @@ import { QuestionsComponent } from './questions/questions.component';
 import { SubjectDetailComponent } from './subjects/subject-detail/subject-detail.component';
 import { SubjectListComponent } from './subjects/subject-list/subject-list.component';
 import { ExamsModule } from "./exams/exams.module";
-import { SubjectsService } from "../../../../libs/core-data/subjects.service";
-import { ExamTypesService } from "../../../../libs/core-data/exam-types.service";
+import { SubjectsService } from "../../../../libs/core-data/src/lib/services/subjects/subjects.service";
+import { ExamTypesService } from "../../../../libs/core-data/src/lib/services/examTypes/exam-types.service";
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, SubjectsComponent, SidebarComponent, QuestionsComponent, SubjectDetailComponent, SubjectListComponent],

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ExamTypesService} from "../../../../../../libs/core-data/exam-types.service";
+import {ExamTypesService} from "../../../../../../libs/core-data/src/lib/services/examTypes/exam-types.service";
 import {ExamType} from "@choice/api-interfaces";
 
 @Component({

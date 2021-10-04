@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {SubjectsService} from "../../../../../../libs/core-data/subjects.service";
+import {SubjectsService} from "../../../../../../libs/core-data/src/lib/services/subjects/subjects.service";
 import {Subject} from "@choice/api-interfaces";
 
 @Component({
