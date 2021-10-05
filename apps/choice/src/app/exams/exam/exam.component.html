@@ -7,5 +7,8 @@
       <a class="bg-blue-500 shadow-md text-sm text-white font-bold py-3 md:px-8 px-4 hover:bg-blue-400 rounded uppercase"
         >Siguiente</a>
     </div>
+    <div *ngFor="let exam of exams">
+      <h2>{{exam.test}}</h2>
+    </div>
   </div>
 </div>

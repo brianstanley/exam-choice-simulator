@@ -1,3 +1,5 @@
+import { ExamsService } from './../../../../../../libs/core-data/src/lib/services/exams/exams.service';
+import { Exam } from './../../../../../../libs/api-interfaces/src/lib/api-interfaces';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,9 +14,17 @@ export class ExamComponent implements OnInit {
   paragraphs = [{id: 0, value: this.paragraph},
                 {id: 1, value: this.paragraph2}];
 
-  constructor() { }
+  exams: Exam[] | undefined;
+
+  constructor(private examsService: ExamsService) { }
+
+  loadExams() {
+    this.examsService.all()
+      .subscribe(exams => this.exams = exams);
+  }
 
   ngOnInit(): void {
+    this.loadExams;
   }
 
 }

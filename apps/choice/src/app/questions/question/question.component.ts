@@ -10,6 +10,7 @@ import {Answer} from "@choice/api-interfaces";
 export class QuestionComponent implements OnInit {
   @Input() title = '';
   @Input() answers: Answer[] = [];
+  @Input() test = '';
 
   constructor() { }
 
