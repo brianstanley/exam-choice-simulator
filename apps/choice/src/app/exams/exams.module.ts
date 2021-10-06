@@ -1,4 +1,3 @@
-import { ExamsService } from './../../../../../libs/core-data/src/lib/services/exams/exams.service';
 import { QuestionComponent } from './../questions/question/question.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -22,9 +21,6 @@ import { KatexModule } from 'ng-katex';
         CommonModule,
         RouterModule,
         KatexModule,
-    ],
-    providers: [
-        ExamsService,
     ]
 })
 export class ExamsModule {

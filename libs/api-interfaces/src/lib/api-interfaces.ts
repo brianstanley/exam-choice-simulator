@@ -13,8 +13,10 @@ export interface Subject extends BaseEntity {
   name: string;
 }
 
-export interface Exam extends BaseEntity{
+export interface Exam extends BaseEntity {
+  examConfigId: number;
   test: string;
+  questions: [];
 }
 
 export interface ExamConfig extends BaseEntity {

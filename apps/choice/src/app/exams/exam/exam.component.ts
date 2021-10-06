@@ -18,13 +18,12 @@ export class ExamComponent implements OnInit {
 
   constructor(private examsService: ExamsService) { }
 
-  loadExams() {
-    this.examsService.all()
-      .subscribe(exams => this.exams = exams);
-  }
-
   ngOnInit(): void {
     this.loadExams;
   }
 
+  loadExams() {
+    this.examsService.all()
+      .subscribe(exams => this.exams = exams);
+  }
 }
