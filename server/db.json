@@ -34,41 +34,40 @@
   "exams": [
     {
       "examConfigId": 1,
-      "test": "Lets try",
       "questions": [
         {
           "id": 1,
-          "question": "¿Cuál es el valor de x en la siguiente ecuación? x = 2^{2} + 2",
+          "question": "$\text{¿Cuál es el valor de }x \text{ en la siguiente ecuación? } x^{2}+2$",
           "options": [
             {
               "id": 1,
-              "value": "x = 6"
+              "value": "$x = 6$"
             },
             {
               "id": 2,
-              "value": "x = 8"
+              "value": "$x = 8$"
             },
             {
               "id": 3,
-              "value": "x = 4"
+              "value": "$x = 4$"
             }
           ]
         },
         {
           "id": 2,
-          "question": "Comparar 2^{3} \times 2 con 3^{2} \times 2 - 2",
+          "question": "$Comparar 2^{3} x 2 con 3^{2} x 2 - 2$",
           "options": [
             {
               "id": 1,
-              "value": "2^{3} \times 2 < 3^{2} \times 2 - 2"
+              "value": "$2^{3} \times 2 < 3^{2} \times 2 - 2$"
             },
             {
               "id": 2,
-              "value": "2^{3} \times 2 = 3^{2} \times 2 - 2"
+              "value": "$2^{3} \times 2 = 3^{2} \times 2 - 2$"
             },
             {
               "id": 3,
-              "value": "2^{3} \times 2 > 3^{2} \times 2 - 2"
+              "value": "$2^{3} \times 2 > 3^{2} \times 2 - 2$"
             }
           ]
         }

@@ -19,6 +19,7 @@ import { ExamsModule } from "./exams/exams.module";
 import { SubjectsService } from "../../../../libs/core-data/src/lib/services/subjects/subjects.service";
 import { ExamTypesService } from "../../../../libs/core-data/src/lib/services/examTypes/exam-types.service";
 import { ExamsService } from './../../../../libs/core-data/src/lib/services/exams/exams.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, SubjectsComponent, SidebarComponent, QuestionsComponent, SubjectDetailComponent, SubjectListComponent],
@@ -32,6 +33,7 @@ import { ExamsService } from './../../../../libs/core-data/src/lib/services/exam
     MaterialModule,
     AppRoutingModule,
     ExamsModule,
+    FormsModule,
   ],
   providers: [
     SubjectsService,
