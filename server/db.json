@@ -37,7 +37,7 @@
       "questions": [
         {
           "id": 1,
-          "question": "$\text{¿Cuál es el valor de }x \text{ en la siguiente ecuación? } x^{2}+2$",
+          "question": "$\\text{¿Cuál es el valor de }x \\text{ en la siguiente ecuación? } \\newline x^{2}+2$",
           "options": [
             {
               "id": 1,
@@ -55,19 +55,37 @@
         },
         {
           "id": 2,
-          "question": "$Comparar 2^{3} x 2 con 3^{2} x 2 - 2$",
+          "question": "$\\text{Comparar }(2^{3} \\times 2) \\text{ con } (3^{2} \\times 2 - 2)$",
           "options": [
             {
               "id": 1,
-              "value": "$2^{3} \times 2 < 3^{2} \times 2 - 2$"
+              "value": "$2^{3} \\times 2 < 3^{2} \\times 2 - 2$"
             },
             {
               "id": 2,
-              "value": "$2^{3} \times 2 = 3^{2} \times 2 - 2$"
+              "value": "$2^{3} \\times 2 = 3^{2} \\times 2 - 2$"
             },
             {
               "id": 3,
-              "value": "$2^{3} \times 2 > 3^{2} \times 2 - 2$"
+              "value": "$2^{3} \\times 2 > 3^{2} \\times 2 - 2$"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "$\\text{Despejar las incógnitas de la siguiente ecuación: } \\newline 2x + 3y = 3^{2}x + y $",
+          "options": [
+            {
+              "id": 1,
+              "value": "$x = \\frac{2}{5} \\hspace{0.1cm}y \\hspace{0.3cm} ; \\hspace{0.3cm}y = \\frac{8}{3} \\hspace{0.1cm}x$"
+            },
+            {
+              "id": 2,
+              "value": "$x = \\frac{4}{7} \\hspace{0.1cm}y \\hspace{0.3cm} ; \\hspace{0.3cm}y = \\frac{7}{3} \\hspace{0.1cm}x$"
+            },
+            {
+              "id": 3,
+              "value": "$x = \\frac{2}{7} \\hspace{0.1cm}y \\hspace{0.3cm} ; \\hspace{0.3cm}y = \\frac{7}{2} \\hspace{0.1cm}x$"
             }
           ]
         }
