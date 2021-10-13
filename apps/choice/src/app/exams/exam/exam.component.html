@@ -1,11 +1,18 @@
-<div class="max-w-2xl mx-auto sm:px-6 lg:px-8">
-  <div class="overflow-hidden shadow-md">
-    <choice-question [title] = equation [answers] = paragraphs></choice-question>
-    <!-- card footer -->
-    <div class="p-6 bg-white border-gray-200 text-right">
-      <!-- button link -->
-      <a class="bg-blue-500 shadow-md text-sm text-white font-bold py-3 md:px-8 px-4 hover:bg-blue-400 rounded uppercase"
-        >Siguiente</a>
-    </div>
+<div class="max-w-2xl mx-auto sm:px-2">
+  <div *ngFor="let exam of exams" class="overflow-hidden shadow-md">
+      <choice-question [question] = exam.questions[i].question [options] = exam.questions[i].options></choice-question>
+      <!-- card footer -->
+      <ng-container *ngIf="i+1 < exam.questions.length; else elseTemplate">
+        <div ng-if class="p-6 bg-white border-gray-200 text-right">
+        <button (click)="onNext()" class="bg-blue-500 shadow-md text-sm text-white font-bold py-3 md:px-8 px-4 hover:bg-blue-400 rounded uppercase"
+          >Siguiente</button>
+      </div>
+      </ng-container>
+      <ng-template #elseTemplate>
+        <div class="p-6 bg-white border-gray-200 text-right">
+        <button class="bg-blue-500 shadow-md text-sm text-white font-bold py-3 md:px-8 px-4 hover:bg-blue-400 rounded uppercase"
+          >Terminar</button>
+      </div>
+      </ng-template>
   </div>
 </div>
